@@ -1,0 +1,66 @@
+.note-new {
+  background-color: blue;
+  border-radius: 10px;
+  padding: 1rem;
+  min-height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+textarea {
+  border: none;
+  resize: none;
+  background-color: blue;
+  font-size: 15px;
+  border-radius: 10px;
+  padding: 1rem;
+  min-height: 170px;
+
+  display: flex;
+
+  flex-direction: column;
+  justify-content: space-between;
+  color: #ffffff;
+}
+textarea:focus {
+  outline: none;
+}
+
+.button {
+  width: 6em;
+  height: 2.5em;
+  border-radius: 30em;
+  font-size: 15px;
+  font-family: inherit;
+  border: none;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+  font-weight: bold;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.button::before {
+  content: "";
+  width: 0;
+  height: 3em;
+  border-radius: 30em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to right, #0fd850 0%, #f9f047 100%);
+  transition: 0.5s ease;
+  display: block;
+  z-index: -1;
+  margin-right: 20px;
+}
+
+.button:hover::before {
+  width: 9em;
+}
+
+.note-footer .small {
+  color: #ffffff;
+}
